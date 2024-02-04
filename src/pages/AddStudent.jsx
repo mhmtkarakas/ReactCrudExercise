@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Header from "./../components/Header";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const AddStudent = () => {
-    const navigate=useNavigate()
+    const navigate=useNavigate();
     const [studentNo, setStudentNo] = useState("");
     const [name, setName] = useState("");
     const [surname, setSurname] = useState("");
@@ -22,7 +23,29 @@ const AddStudent = () => {
       ) {
           alert("Bütün Alanları Doldurmak Zorunludur.")
           return
-    }}
+    }
+    // Yeni Girecegimiz ogrenci bilgilerini olusturuyoruz
+    const newStudent={
+      id:String(new Date().getTime()),
+      name:name,
+      surname:surname,
+      studentNo:studentNo,
+      studentClass:studentClass,
+      schoolName:schoolName
+    }
+    axios.post("http://localhost:3004/students",newStudent)
+    .then(res=>{
+      navigate("/")
+    })
+    .catch(err=>{
+      console.log(err);
+      alert("Kayıt işleminde bir sorun oluştu.")
+    })
+
+  };
+       
+    
+
   return (
     <div>
       <Header />
