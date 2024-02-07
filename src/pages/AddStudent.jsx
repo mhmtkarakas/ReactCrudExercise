@@ -5,6 +5,7 @@ import axios from "axios";
 
 const AddStudent = () => {
     const navigate=useNavigate();
+    // To control input we need to use State
     const [studentNo, setStudentNo] = useState("");
     const [name, setName] = useState("");
     const [surname, setSurname] = useState("");
@@ -24,7 +25,7 @@ const AddStudent = () => {
           alert("Bütün Alanları Doldurmak Zorunludur.")
           return
     }
-    // Yeni Girecegimiz ogrenci bilgilerini olusturuyoruz
+    // We create the new student information
     const newStudent={
       id:String(new Date().getTime()),
       name:name,
