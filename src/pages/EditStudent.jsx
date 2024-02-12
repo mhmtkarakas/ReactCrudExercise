@@ -1,3 +1,10 @@
+// 1. with useParams we are reading id in the url
+// 2. we are pulling the student datas
+// 3. Datas are setted in the realtions state
+// 4. Relations states are printed on the screen with the setted situations
+// 5. We are getting the editted data from the form
+// 6. Finally after the user pressing the edit button we are going to do enrollment 
+
 import React from 'react'
 import Header from '../components/Header'
 import { useParams,useNavigate } from 'react-router-dom'
@@ -6,6 +13,7 @@ import { useEffect,useState } from 'react';
 
 
 const EditStudent = () => {
+    // for reading id in the URL we need to use useParams hook and then with distraction 
     const {studentId} = useParams()
     const navigate = useNavigate();
     // we must to create a state to control the student data that we pulled from the data

@@ -1,20 +1,36 @@
 {
   "students": [
     {
-      "id": "1707178568197",
-      "studentNo": "hhhhfgh",
-      "name": "fghdh",
-      "surname": "gdgh",
-      "studentClass": "gjgj",
-      "schoolName": "jgjgj"
+      "id": "1707761597389",
+      "studentNo": "9995",
+      "name": "enes",
+      "surname": "karakas",
+      "studentClass": "5/b",
+      "schoolName": "Girne koleji"
     },
     {
-      "id": "1707325358900",
-      "studentNo": "oooo duzenle",
-      "name": ";;;;ppp duzenle",
-      "surname": "jjjjj",
-      "studentClass": "iiiii duzenle",
-      "schoolName": "ppppp duzenle"
+      "id": "1707762452041",
+      "name": "eren",
+      "surname": "karakas",
+      "studentNo": "777",
+      "studentClass": "4/a",
+      "schoolName": "girne koleji"
+    },
+    {
+      "id": "1707762496474",
+      "name": "Ahmet ",
+      "surname": "Beyaz",
+      "studentNo": "678",
+      "studentClass": "7/B",
+      "schoolName": "Girne Koleji"
+    },
+    {
+      "id": "1707762538472",
+      "studentNo": "55577",
+      "name": "Selim",
+      "surname": "Sayar",
+      "studentClass": "9/B",
+      "schoolName": "Girne Koleji"
     }
   ]
 }
